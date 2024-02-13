@@ -18,7 +18,7 @@ Explore the diverse range of algorithmic trading strategies included in this rep
    - Description: Utilizing the Moving Average Convergence Divergence (MACD) indicator for trade signals.
    - Entry and exit conditions, as well as implementation details.
 
-3. **[Fibonacci Strategy](strategies/Fibonacci_Strategy/Readme.md):**
+3. **[Fibonacci Strategy](https://github.com/Arin2k24/Algo_Strategies/blob/main/Fibonacci_Retracement.md):**
    - Description: A strategy incorporating Fibonacci retracement levels for decision-making.
    - Key features, entry and exit criteria, and implementation guide.
 
