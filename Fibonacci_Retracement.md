@@ -45,8 +45,8 @@ import matplotlib.pyplot as plt
 
 ### Load historical price data
 ```python
-ticker_symbol = 'ETH-USD'  # You can change this to any valid stock symbol
-start_date = '2023-12-01'
+ticker_symbol = 'BTC-USD'  # You can change this to any valid stock symbol
+start_date = '2010-01-01'
 end_date = '2024-01-01'
 
 stock_data = get_stock_data(ticker_symbol, start=start_date, end=end_date)
