@@ -78,17 +78,27 @@ Explore the visual representation of the strategy's performance below:
 ```python
 plt.figure(figsize=(10, 6))
 plt.plot(stock_data['Close'], label='Closing Prices', color='blue')
-plt.axhline(y=fibonacci_values[0], color='red', linestyle='--', label='38.2% Fibonacci Level')
-plt.axhline(y=fibonacci_values[1], color='orange', linestyle='--', label='50% Fibonacci Level')
-plt.axhline(y=fibonacci_values[2], color='green', linestyle='--', label='61.8% Fibonacci Level')
-plt.title('Fibonacci Retracement Levels')
+
+# Plot Buy signals
+plt.scatter(stock_data.index[stock_data['Long_Signal'] == 1], 
+            stock_data['Close'][stock_data['Long_Signal'] == 1], 
+            marker='^', color='green', label='Buy Signal')
+
+# Plot Sell signals
+plt.scatter(stock_data.index[stock_data['Short_Signal'] == 1], 
+            stock_data['Close'][stock_data['Short_Signal'] == 1], 
+            marker='v', color='red', label='Sell Signal')
+
+# Customize the plot
+plt.title('Buy/Sell Signals with Fibonacci Retracement Levels')
 plt.xlabel('Date')
 plt.ylabel('Price')
 plt.legend()
 plt.grid(True)
 plt.show()
 ```
-![image](https://github.com/Arin2k24/Algo_Strategies/assets/157686042/a6363e17-2232-40a2-bc5a-56da4db968f4)
+![image](https://github.com/Arin2k24/Algo_Strategies/assets/157686042/0361b6cf-5ace-485a-abc8-2bd802a804be)
+
 
 The graph illustrates the Fibonacci Retracement Levels. By following the generated trade signals in conjunction with adjusted stop losses, this strategy demonstrates its effectiveness in various market conditions.
 ```python
@@ -101,7 +111,8 @@ plt.ylabel('Net P&L Value')
 plt.legend()
 plt.show()
 ```
-![image](https://github.com/Arin2k24/Algo_Strategies/assets/157686042/f802f6cc-b907-4dbc-af17-b3f52a202668)
+![image](https://github.com/Arin2k24/Algo_Strategies/assets/157686042/c848a9dd-d484-44f9-ba23-20e81184aea3)
+
 
 ## Further Improvements
 - Advanced Techniques: Explore advanced Fibonacci tools and techniques.
