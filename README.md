@@ -22,6 +22,10 @@ Explore the diverse range of algorithmic trading strategies included in this rep
    - Description: A strategy incorporating Fibonacci retracement levels for decision-making.
    - Key features, entry and exit criteria, and implementation guide.
 
+4. **[ARIMA Strategy](https://github.com/Arin2k24/Algo_Strategies/blob/main/ARIMA.md):**
+   - Description: A strategy based on ARIMA (AutoRegressive Integrated Moving Average) for time series forecasting and trading decisions.
+   - Key features, entry and exit criteria, and implementation guide.
+
 ## Implementation Guide
 
 For a detailed guide on implementing these strategies, refer to the [Implementation Guide]().
