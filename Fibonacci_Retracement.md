@@ -49,7 +49,7 @@ ticker_symbol = 'BTC-USD'  # You can change this to any valid stock symbol
 start_date = '2010-01-01'
 end_date = '2024-01-01'
 
-stock_data = get_stock_data(ticker_symbol, start=start_date, end=end_date)
+stock_data = yf.download(ticker_symbol, start=start_date, end=end_date)
 ```
 
 ### Calculate Fibonacci retracement levels
