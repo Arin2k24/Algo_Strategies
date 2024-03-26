@@ -26,6 +26,10 @@ Explore the diverse range of algorithmic trading strategies included in this rep
    - Description: A strategy based on ARIMA (AutoRegressive Integrated Moving Average) for time series forecasting and trading decisions.
    - Key features, entry and exit criteria, and implementation guide.
 
+5. **[Pairs Trading Strategy](https://github.com/Arin2k24/Algo_Strategies/blob/main/Pairs_Trading.md):**
+   - Description: A market-neutral trading strategy that profits from the relative performance of two correlated assets. It identifies pairs of stocks with high correlation coefficients, calculates trading signals based on statistical indicators such as the z-score and MACD, and dynamically manages positions while implementing risk control measures such as stop-loss orders.
+   - Entry and exit criteria, pros and cons, as well as implementation details.
+
 ## Implementation Guide
 
 For a detailed guide on implementing these strategies, refer to the [Implementation Guide]().
